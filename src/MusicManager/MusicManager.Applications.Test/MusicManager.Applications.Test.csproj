@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0-windows10.0.18362</TargetFramework>
+    <RootNamespace>Test.MusicManager.Applications</RootNamespace>
+    <AssemblyName>Test.MusicManager.Applications</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Waf.UnitTesting.Wpf" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MusicManager.Domain\MusicManager.Domain.csproj" />
+    <ProjectReference Include="..\MusicManager.Applications\MusicManager.Applications.csproj" />
+    <ProjectReference Include="..\MusicManager.Domain.Test\MusicManager.Domain.Test.csproj" />
+  </ItemGroup>
+</Project>

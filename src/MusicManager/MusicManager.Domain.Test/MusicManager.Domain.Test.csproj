@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <AssemblyName>Test.MusicManager.Domain</AssemblyName>
+    <RootNamespace>Test.MusicManager.Domain</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Waf.UnitTesting.Core" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MusicManager.Domain\MusicManager.Domain.csproj" />
+  </ItemGroup>
+</Project>

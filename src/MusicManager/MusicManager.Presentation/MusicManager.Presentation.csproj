@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows10.0.18362</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <RootNamespace>Waf.MusicManager.Presentation</RootNamespace>
+    <AssemblyName>MusicManager</AssemblyName>
+    <AssemblyTitle>Waf Music Manager</AssemblyTitle>
+    <ApplicationIcon>Resources\Images\MusicManager.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MusicManager.Applications\MusicManager.Applications.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx" Generator="PublicResXFileCodeGenerator" LastGenOutput="Resources.Designer.cs" />
+    <Compile Update="Properties\Resources.Designer.cs" AutoGen="True" DependentUpon="Resources.resx" DesignTime="True" />
+
+    <Resource Include="Resources\Images\**" />
+  </ItemGroup>
+</Project>
